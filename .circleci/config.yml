@@ -231,7 +231,7 @@ jobs:
       # Here's where you will add some code to rollback on failure  
 
   cloudfront-update:
-    docker:
+    docker: 
       # Docker image here that supports AWS CLI
     steps:
       # Checkout code from git
@@ -245,7 +245,7 @@ jobs:
             # your code here
       # Here's where you will add some code to rollback on failure  
 
-cleanup:
+  cleanup:
     docker:
       # Docker image here
     steps:
@@ -263,8 +263,7 @@ cleanup:
             then
               # your code here
             fi
-            
-
+              
 workflows:
   default:
     jobs:
